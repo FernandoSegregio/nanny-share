@@ -9,14 +9,17 @@ export const ShowApp = styled.section`
 `;
 export const ArticleProfile = styled.article`
   align-items: center;
-  display: flex;
+  border: var(--border-width-hairline) solid var(--neutral-color-gray-88);
   flex-direction: column;
+  display: flex;
   justify-content: space-evenly;
   height: 216px;
   width: 100%;
 
     img {
-      width: 56px;
+      border: 4px solid #FFFFFF;
+      border-radius: var(--border-radius-circle);
+      filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
     }
 
     a {
