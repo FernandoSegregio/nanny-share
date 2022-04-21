@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   --line-height-default: 100%;
   --line-height-m: 114%;
   --line-height-l: 150%;
-  --line-height-xl: 170%;
+  --line-height-xl: 175%;
 
     /* font weight */
   --font-weight-500: 500;
