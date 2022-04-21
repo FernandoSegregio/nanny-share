@@ -35,8 +35,10 @@ export const HeaderContainer = styled.header`
   article {
     align-items: center;
     display: flex;
+    height: 298px;
     flex-direction: column;
     row-gap: var(--spacing-xxxs);
+    padding-top: 32px;
 
       p {
         color: var(--neutral-color-white-100);
@@ -63,4 +65,17 @@ export const ButtonHeader = styled.button`
 
 export const Player = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  width: 310px;
+  
+    a {
+      color: var(--neutral-color-white-100);
+      font-size: var(--font-size-s);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-500);
+      line-height: var(--line-height-l);
+      text-decoration-line: underline;
+    }
 `;
