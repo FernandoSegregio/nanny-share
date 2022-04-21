@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import backgroundMobile from '../../assets/images/background-mobile.svg';
 
-const HeaderContainer = styled.header`
+export const HeaderContainer = styled.header`
   background-image: url(${backgroundMobile}), linear-gradient(var(--color-overlay));
   background-repeat: no-repeat;
   background-size: 100%;
@@ -19,4 +19,12 @@ const HeaderContainer = styled.header`
   }
 `;
 
-export default HeaderContainer;
+export const ButtonHeader = styled.button`
+  border-radius: var(--border-width-thick);
+  background-color: var(--brand-color-primary);
+  border: var(--border-width-none);
+  color: var(--neutral-color-white-100);
+  cursor: pointer;
+  height: 44px;
+  width: 234px;
+`;
