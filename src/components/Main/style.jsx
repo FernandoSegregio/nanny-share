@@ -88,3 +88,6 @@ export const ArticleShare = styled.article`
       line-height: 24px;
     }
 `;
+
+export const ArticlePost = styled.article`
+`;

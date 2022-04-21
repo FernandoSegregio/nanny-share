@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  ArticlePost,
   ArticleProfile, ArticleShare, MainContainer, ShowApp,
 } from './style';
 import sarahImage from '../../assets/images/main_images/sarah-profile-image.svg';
@@ -32,6 +33,9 @@ export default function Main() {
           <a href="started">Ready to get started?</a>
         </ArticleShare>
         <hr />
+        <ArticlePost>
+          post
+        </ArticlePost>
       </ShowApp>
     </MainContainer>
   );
