@@ -5,8 +5,15 @@ export const MainContainer = styled.main`
 `;
 
 export const ShowApp = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
+  hr {
+    width: 328px
+  }
 `;
+
 export const ArticleProfile = styled.article`
   align-items: center;
   border: var(--border-width-hairline) solid var(--neutral-color-gray-88);
@@ -90,4 +97,5 @@ export const ArticleShare = styled.article`
 `;
 
 export const ArticlePost = styled.article`
+  height: 496px;
 `;
