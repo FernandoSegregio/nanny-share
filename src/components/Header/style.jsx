@@ -32,6 +32,22 @@ export const HeaderContainer = styled.header`
     width: 272px;
   }
 
+  article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-xxxs);
+
+      p {
+        color: var(--neutral-color-white-100);
+        font-size: var(--font-size-s);
+        font-style: var(--font-style-normal);
+        font-weight: var(--font-weight-normal);
+        line-height: 28px;
+        text-align: center;
+        width: 328px;
+      }
+  }
 `;
 
 export const ButtonHeader = styled.button`
@@ -43,4 +59,8 @@ export const ButtonHeader = styled.button`
   margin-bottom: var(--spacing-quarck);
   height: 44px;
   width: 234px;
+`;
+
+export const Player = styled.div`
+  display: flex;
 `;
