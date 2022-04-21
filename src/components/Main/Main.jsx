@@ -14,6 +14,7 @@ export default function Main() {
           <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>
         </ArticleProfile>
         <ArticleShare>
+          <h3>Share your home, nanny and costs</h3>
           <p>
             You have a fantastic home, a fantastic nanny and wouldn’t
             cutting your costs in half be, well, fantastic?! If only it
