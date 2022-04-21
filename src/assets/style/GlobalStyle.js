@@ -80,6 +80,7 @@ const GlobalStyle = createGlobalStyle`
   --border-width-thin: 0.125rem; /* 2px */
   --border-width-thick: 0.25rem; /* 4px */
 }
+
 `;
 
 export default GlobalStyle;
