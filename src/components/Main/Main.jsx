@@ -1,8 +1,14 @@
 import React from 'react';
-import { MainContainer } from './style';
+import { ArticleShow, MainContainer, ShowApp } from './style';
 
 export default function Main() {
   return (
-    <MainContainer>Main</MainContainer>
+    <MainContainer>
+      <ShowApp>
+        <ArticleShow>
+          article
+        </ArticleShow>
+      </ShowApp>
+    </MainContainer>
   );
 }

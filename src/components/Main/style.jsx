@@ -4,4 +4,9 @@ export const MainContainer = styled.main`
   
 `;
 
-export default MainContainer;
+export const ShowApp = styled.section`
+
+`;
+export const ArticleProfile = styled.article`
+
+`;
