@@ -8,6 +8,8 @@ export default function Main() {
       <ShowApp>
         <ArticleProfile>
           <img src={sarahImage} alt="profile sarah" />
+          <a href="profile">Sarah’s day care available now in North Sydney</a>
+          <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>
         </ArticleProfile>
       </ShowApp>
     </MainContainer>
