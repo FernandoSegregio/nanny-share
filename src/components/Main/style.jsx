@@ -42,5 +42,49 @@ export const ArticleProfile = styled.article`
 `;
 
 export const ArticleShare = styled.article`
-  width: 792px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 792px;
+
+    img {
+      width: 304px;
+    }
+
+    h3 {
+      color: var(--neutral-color-gray-24);
+      font-size: var(--font-size-l);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-500);
+      line-height: 32px;
+      text-align: center;
+      width: 218px;
+    }
+
+    p {
+      color: var(--neutral-color-gray-24);
+      font-size: var(--font-size-s);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-normal);
+      line-height: var(--line-height-xl);
+      text-align: center;
+      width: 328px;
+
+        a {
+          color: var(--brand-color-secundary);
+          font-size: var(--font-size-s);
+          font-style: var(--font-style-normal);
+          font-weight: var(--font-weight-500);
+          line-height: 24px;
+        }
+      }
+
+    a {
+      color: var(--brand-color-secundary);
+      font-size: var(--font-size-s);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-500);
+      line-height: 24px;
+    }
 `;
