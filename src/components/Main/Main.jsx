@@ -3,6 +3,7 @@ import {
   ArticleProfile, ArticleShare, MainContainer, ShowApp,
 } from './style';
 import sarahImage from '../../assets/images/main_images/sarah-profile-image.svg';
+import shareScreenMobile from '../../assets/images/main_images/share-screen-mobile.svg';
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
           <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>
         </ArticleProfile>
         <ArticleShare>
+          <img src={shareScreenMobile} alt="share screen" />
           <h3>Share your home, nanny and costs</h3>
           <p>
             You have a fantastic home, a fantastic nanny and wouldn’t
