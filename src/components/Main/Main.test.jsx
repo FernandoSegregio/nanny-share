@@ -16,4 +16,10 @@ describe('Testing component Main', () => {
     const articleElement = screen.getByRole('article');
     expect(articleElement).toBeInTheDocument();
   });
+  it('should be able to show a image a profile in the render.', () => {
+    render(<Main />);
+    const altImgProfile = 'profile sarah';
+    const imgProfile = screen.getByAltText(altImgProfile);
+    expect(imgProfile).toHaveAttribute('src', 'sarah-profile-image.svg');
+  });
 });
