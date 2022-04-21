@@ -40,3 +40,7 @@ export const ArticleProfile = styled.article`
       width: 286px;
     }
 `;
+
+export const ArticleShare = styled.article`
+  width: 792px;
+`;
