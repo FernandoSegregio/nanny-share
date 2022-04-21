@@ -23,6 +23,7 @@ export default function Header() {
         </p>
         <Player>
           <img src={iconPlay} alt="logo play" />
+          <a href="#test">See hapu in action (27 seconds)</a>
         </Player>
       </article>
     </HeaderContainer>
