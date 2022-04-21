@@ -34,4 +34,10 @@ describe('Testing component Main', () => {
     expect(inputEmail).toBeInTheDocument();
     expect(inputEmail).toHaveValue('');
   });
+  it('should be able to show a button in form.', () => {
+    render(<Main />);
+
+    const buttonSend = screen.getByRole('button', { name: /Send/i });
+    expect(buttonSend).toBeInTheDocument();
+  });
 });
