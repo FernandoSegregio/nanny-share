@@ -27,6 +27,7 @@ export default function FormPost() {
           onChange={({ target }) => setMail(target.value)}
         />
       </label>
+      <button type="submit">Send</button>
     </form>
   );
 }
