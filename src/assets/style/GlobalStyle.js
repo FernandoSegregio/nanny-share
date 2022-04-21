@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 
     /* line height */
   --line-height-default: 100%;
-  --line-height-m: 115%;
+  --line-height-m: 114%;
   --line-height-l: 150%;
   --line-height-xl: 170%;
 
