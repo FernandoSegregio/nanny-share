@@ -13,4 +13,12 @@ describe('Testing component Header', () => {
     });
     expect(h2Element).toBeInTheDocument();
   });
+  it('should be able to show a button text "Become a Nanny Share Host" element.', () => {
+    render(<Header />);
+
+    const buttonHostText = screen.getByRole('button', {
+      name: /Become a Nanny Share Host/i,
+    });
+    expect(buttonHostText).toBeInTheDocument();
+  });
 });
