@@ -5,6 +5,7 @@ import {
 } from './style';
 import sarahImage from '../../assets/images/main_images/sarah-profile-image.svg';
 import shareScreenMobile from '../../assets/images/main_images/share-screen-mobile.svg';
+import FormPost from '../Form/FormPost';
 
 export default function Main() {
   return (
@@ -34,7 +35,7 @@ export default function Main() {
         </ArticleShare>
         <hr />
         <ArticlePost>
-          post
+          <FormPost />
         </ArticlePost>
       </ShowApp>
     </MainContainer>
