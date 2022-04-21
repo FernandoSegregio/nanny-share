@@ -22,13 +22,16 @@ export default function Main() {
             cutting your costs in half be, well, fantastic?! If only it
             was easy to connect with other parents to share your costs?
             Well now it is, with Hapu.
+            {' '}
             <a href="tribe">Hapu means tribe</a>
             and it’s our foundational 3 tribal principles that empowers you to
             create and manage your own tribe. A tribe that together
             has the power to create new affordable solutions in
             childcare that work for you and your community.
           </p>
+          <a href="started">Ready to get started?</a>
         </ArticleShare>
+        <hr />
       </ShowApp>
     </MainContainer>
   );
