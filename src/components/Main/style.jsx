@@ -16,9 +16,7 @@ export const ArticleProfile = styled.article`
   height: 216px;
   width: 100%;
 
-    img {
-      border: 4px solid #FFFFFF;
-      border-radius: var(--border-radius-circle);
+    img {      
       filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
     }
 
