@@ -1,15 +1,30 @@
 import React from 'react';
-import { HeaderContainer, ButtonHeader } from './style';
+import {
+  ButtonHeader,
+  HeaderContainer,
+  Player,
+} from './style';
 import iconTopHeader from '../../assets/images/icon-top-header.svg';
+import iconPlay from '../../assets/images/icon-play.svg';
 
 export default function Header() {
   return (
     <HeaderContainer>
-      <div>
+      <nav>
         <img src={iconTopHeader} alt="logo icon" />
         <ButtonHeader type="button">Become a Nanny Share Host</ButtonHeader>
-      </div>
-      <h2>Easily create or join a local nanny share with Hapu</h2>
+      </nav>
+      <article>
+        <h2>Easily create or join a local nanny share with Hapu</h2>
+        <p>
+          Hapu is Airbnb for nanny share. Share your home,
+          nanny and costs and create new flexible, affordable
+          solutions in childcare.
+        </p>
+        <Player>
+          <img src={iconPlay} alt="logo play" />
+        </Player>
+      </article>
     </HeaderContainer>
   );
 }
