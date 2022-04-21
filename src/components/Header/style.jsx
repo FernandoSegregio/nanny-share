@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   background-size: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   height: 540px;
   width: 100%;
 
@@ -17,8 +17,6 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     height: 64px;
-    position: fixed;
-    top: 0;
     width: 88%;
   }
 
@@ -38,7 +36,7 @@ export const HeaderContainer = styled.header`
     height: 298px;
     flex-direction: column;
     row-gap: var(--spacing-xxxs);
-    padding-top: 32px;
+    padding-top: 90px;
 
       p {
         color: var(--neutral-color-white-100);
