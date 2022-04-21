@@ -8,10 +8,11 @@ export const HeaderContainer = styled.header`
   background-size: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 540px;
   width: 100%;
 
-  div {
+  nav {
     align-items: flex-end;
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,7 @@ export const HeaderContainer = styled.header`
     text-align: center;
     width: 272px;
   }
+
 `;
 
 export const ButtonHeader = styled.button`
