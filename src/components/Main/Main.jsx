@@ -1,13 +1,13 @@
 import React from 'react';
-import { ArticleShow, MainContainer, ShowApp } from './style';
+import { ArticleProfile, MainContainer, ShowApp } from './style';
 
 export default function Main() {
   return (
     <MainContainer>
       <ShowApp>
-        <ArticleShow>
+        <ArticleProfile>
           article
-        </ArticleShow>
+        </ArticleProfile>
       </ShowApp>
     </MainContainer>
   );
