@@ -4,8 +4,8 @@ import {
   HeaderContainer,
   Player,
 } from './style';
-import iconTopHeader from '../../assets/images/icon-top-header.svg';
-import iconPlay from '../../assets/images/icon-play.svg';
+import iconTopHeader from '../../assets/images/header_images/icon-top-header.svg';
+import iconPlay from '../../assets/images/header_images/icon-play.svg';
 
 export default function Header() {
   return (

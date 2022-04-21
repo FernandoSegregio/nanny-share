@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundMobile from '../../assets/images/background-mobile.svg';
+import backgroundMobile from '../../assets/images/header_images/background-mobile.svg';
 
 export const HeaderContainer = styled.header`
   align-items: center;
