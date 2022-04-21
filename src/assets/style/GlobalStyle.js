@@ -81,6 +81,16 @@ const GlobalStyle = createGlobalStyle`
   --border-width-thick: 0.25rem; /* 4px */
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter
+}
+
 `;
 
 export default GlobalStyle;
