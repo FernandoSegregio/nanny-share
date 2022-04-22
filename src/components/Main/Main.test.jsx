@@ -19,6 +19,7 @@ describe('Testing component Main', () => {
   });
   it('should be able to show a image a profile in the render.', () => {
     render(<Main />);
+
     const altImgProfile = 'profile sarah';
     const imgProfile = screen.getByAltText(altImgProfile);
     expect(imgProfile).toHaveAttribute('src', 'sarah-profile-image.svg');
@@ -51,6 +52,7 @@ describe('Testing component Main', () => {
   });
   it('should be able to show a image a share payment in the render.', () => {
     render(<Main />);
+
     const altImgProfile = 'share payment example';
     const imgSharePayment = screen.getByAltText(altImgProfile);
     expect(imgSharePayment).toHaveAttribute('src', 'share-payment.svg');
@@ -60,6 +62,22 @@ describe('Testing component Main', () => {
 
     const h3Element = screen.getByRole('heading', {
       name: /A framework built for the long term/i,
+      level: 3,
+    });
+    expect(h3Element).toBeInTheDocument();
+  });
+  it('should be able to show a image a new feature in the render.', () => {
+    render(<Main />);
+
+    const altImgNewFeature = 'new feature';
+    const imgNewFeature = screen.getByAltText(altImgNewFeature);
+    expect(imgNewFeature).toHaveAttribute('src', 'new-feature.svg');
+  });
+  it('should be able to show a h3 text "Coming soon: Nanny Share Daily Diary!" element.', () => {
+    render(<Main />);
+
+    const h3Element = screen.getByRole('heading', {
+      name: /Coming soon: Nanny Share Daily Diary!/i,
       level: 3,
     });
     expect(h3Element).toBeInTheDocument();
