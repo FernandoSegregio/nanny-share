@@ -26,6 +26,7 @@ export default function Main() {
             Well now it is, with Hapu.
             {' '}
             <a href="tribe">Hapu means tribe</a>
+            {' '}
             and it’s our foundational 3 tribal principles that empowers you to
             create and manage your own tribe. A tribe that together
             has the power to create new affordable solutions in
@@ -35,6 +36,11 @@ export default function Main() {
         </ArticleShare>
         <hr />
         <ArticlePost>
+          <h3>Are you a parent without a nanny and looking to share?</h3>
+          <p>
+            Leave us your name and email and we’ll update you as soon
+            as a share becomes available in your area!
+          </p>
           <FormPost />
         </ArticlePost>
       </ShowApp>
