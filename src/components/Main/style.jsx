@@ -123,7 +123,7 @@ export const ArticleShare = styled.article`
 
        @media (min-width: 900px) {
         text-align: left;
-        width: 444px;
+        width: 484px;
       }
    
          a {
@@ -251,6 +251,90 @@ export const ArticlePost = styled.article`
         }
       }
     }
+`;
+
+export const ArticleShareSimple = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 472px;
+  height: 792px;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 56px;
+    height: 632px;
+  }
+
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 472px;
+
+      @media (min-width: 900px) {
+        align-items: flex-start; 
+      }
+  
+     h3 {
+       color: var(--neutral-color-gray-24);
+       font-size: var(--font-size-l);
+       font-style: var(--font-style-normal);
+       font-weight: var(--font-weight-500);
+       line-height: 32px;
+       text-align: center;
+       width: 218px;
+
+       @media (min-width: 900px) {
+        font-size: var(--font-size-xl);
+        text-align: left;
+        width: 411px;
+      }
+     }
+   
+     p {
+       color: var(--neutral-color-gray-24);
+       font-size: var(--font-size-s);
+       font-style: var(--font-style-normal);
+       font-weight: var(--font-weight-normal);
+       line-height: var(--line-height-xl);
+       text-align: center;
+       width: 328px;
+
+       @media (min-width: 900px) {
+        text-align: left;
+        width: 444px;
+      }
+   
+         a {
+           color: var(--brand-color-secundary);
+           font-size: var(--font-size-s);
+           font-style: var(--font-style-normal);
+           font-weight: var(--font-weight-500);
+           line-height: 24px;
+         }
+       }
+   
+     a {
+       color: var(--brand-color-secundary);
+       font-size: var(--font-size-s);
+       font-style: var(--font-style-normal);
+       font-weight: var(--font-weight-500);
+       line-height: 24px;
+       text-align: center;
+     }
+  }
+  
+    img {
+      width: 304px;
+
+      @media (min-width: 900px) {
+        width: 584px;
+      } 
+    }
+
 `;
 
 export const ArticleFramework = styled.article`
