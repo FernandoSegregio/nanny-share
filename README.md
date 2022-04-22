@@ -52,7 +52,7 @@ $ yarn build
 
 A aplicação roda no navegador, na porta 3000 com o seguinte endereço: http://localhost:3000
 
-Link da aplicação: 
+Link da aplicação: https://nanny-share-fernandosegregio.vercel.app
 
 ## 👨🏻‍💻Desenvolvido por:
 
