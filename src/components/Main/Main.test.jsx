@@ -55,4 +55,13 @@ describe('Testing component Main', () => {
     const imgSharePayment = screen.getByAltText(altImgProfile);
     expect(imgSharePayment).toHaveAttribute('src', 'share-payment.svg');
   });
+  it('should be able to show a h3 text "A framework built for the long term" element.', () => {
+    render(<Main />);
+
+    const h3Element = screen.getByRole('heading', {
+      name: /A framework built for the long term/i,
+      level: 3,
+    });
+    expect(h3Element).toBeInTheDocument();
+  });
 });
