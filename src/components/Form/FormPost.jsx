@@ -1,11 +1,20 @@
 import React, { useState } from 'react';
+import { postUser } from '../../services/postApi';
 
 export default function FormPost() {
   const [name, setName] = useState('');
   const [email, setMail] = useState('');
 
+  function onSubmit(e) {
+    e.preventDefault();
+
+    postUser({ name, email });
+    setName('');
+    setMail('');
+  }
+
   return (
-    <form>
+    <form onSubmit={(e) => onSubmit(e)}>
       <label htmlFor="name">
         <input
           name="name"
