@@ -40,4 +40,13 @@ describe('Testing component Main', () => {
     const buttonSend = screen.getByRole('button', { name: /Send/i });
     expect(buttonSend).toBeInTheDocument();
   });
+  it('should be able to show a h3 text "Are you a parent without a nanny and looking to share?" element.', () => {
+    render(<Main />);
+
+    const h3Element = screen.getByRole('heading', {
+      name: /Are you a parent without a nanny and looking to share?/i,
+      level: 3,
+    });
+    expect(h3Element).toBeInTheDocument();
+  });
 });
