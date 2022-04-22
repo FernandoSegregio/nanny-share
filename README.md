@@ -17,6 +17,7 @@ Para Criação do projeto, foi utilizada os conceitos de:
 * Production builds.
 
 ## :wrench: Tecnologias utilizadas
+* Mobile First
 * Vite
 * Yarn
 * React
