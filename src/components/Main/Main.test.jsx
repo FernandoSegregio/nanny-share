@@ -49,4 +49,10 @@ describe('Testing component Main', () => {
     });
     expect(h3Element).toBeInTheDocument();
   });
+  it('should be able to show a image a share payment in the render.', () => {
+    render(<Main />);
+    const altImgProfile = 'share payment example';
+    const imgSharePayment = screen.getByAltText(altImgProfile);
+    expect(imgSharePayment).toHaveAttribute('src', 'share-payment.svg');
+  });
 });
