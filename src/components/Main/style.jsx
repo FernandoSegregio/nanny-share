@@ -8,9 +8,12 @@ export const ShowApp = styled.section`
   background-color: var(--neutral-color-white-200);
   display: flex;
   flex-direction: column;
-
   hr {
-    width: 328px
+    width: 328px;
+      
+      @media (min-width: 900px) {
+        width: 784px;
+      }
   }
 `;
 
@@ -24,8 +27,19 @@ export const ArticleProfile = styled.article`
   height: 216px;
   width: 100%;
 
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: center;
+    height: 112px; 
+    column-gap: 5px;   
+   }
+
     img {      
       filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+
+        @media (min-width: 900px) {
+          margin-right: 32px;
+        }
     }
 
     a {
@@ -37,6 +51,10 @@ export const ArticleProfile = styled.article`
       text-align: center;
       text-decoration-line: underline;
       width: 212px;
+
+      @media (min-width: 900px) {
+        width: 361px;    
+      }
     }
 
     h5 {
@@ -46,56 +64,95 @@ export const ArticleProfile = styled.article`
       font-weight: var(--font-weight-500);
       line-height: 20px;
       width: 286px;
+
+      @media (min-width: 900px) {
+        width: 309px;    
+      }
     }
 `;
 
 export const ArticleShare = styled.article`
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 472px;
   height: 792px;
 
+  @media (min-width: 900px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 56px;
+    height: 632px;
+  }
+
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 472px;
+
+      @media (min-width: 900px) {
+        align-items: flex-start; 
+      }
+  
+     h3 {
+       color: var(--neutral-color-gray-24);
+       font-size: var(--font-size-l);
+       font-style: var(--font-style-normal);
+       font-weight: var(--font-weight-500);
+       line-height: 32px;
+       text-align: center;
+       width: 218px;
+
+       @media (min-width: 900px) {
+        font-size: var(--font-size-xl);
+        text-align: left;
+        width: 250px;
+      }
+     }
+   
+     p {
+       color: var(--neutral-color-gray-24);
+       font-size: var(--font-size-s);
+       font-style: var(--font-style-normal);
+       font-weight: var(--font-weight-normal);
+       line-height: var(--line-height-xl);
+       text-align: center;
+       width: 328px;
+
+       @media (min-width: 900px) {
+        text-align: left;
+        width: 444px;
+      }
+   
+         a {
+           color: var(--brand-color-secundary);
+           font-size: var(--font-size-s);
+           font-style: var(--font-style-normal);
+           font-weight: var(--font-weight-500);
+           line-height: 24px;
+         }
+       }
+   
+     a {
+       color: var(--brand-color-secundary);
+       font-size: var(--font-size-s);
+       font-style: var(--font-style-normal);
+       font-weight: var(--font-weight-500);
+       line-height: 24px;
+       text-align: center;
+     }
+  }
+  
     img {
       width: 304px;
+
+      @media (min-width: 900px) {
+        width: 584px;
+      } 
     }
 
-    h3 {
-      color: var(--neutral-color-gray-24);
-      font-size: var(--font-size-l);
-      font-style: var(--font-style-normal);
-      font-weight: var(--font-weight-500);
-      line-height: 32px;
-      text-align: center;
-      width: 218px;
-    }
-
-    p {
-      color: var(--neutral-color-gray-24);
-      font-size: var(--font-size-s);
-      font-style: var(--font-style-normal);
-      font-weight: var(--font-weight-normal);
-      line-height: var(--line-height-xl);
-      text-align: center;
-      width: 328px;
-
-        a {
-          color: var(--brand-color-secundary);
-          font-size: var(--font-size-s);
-          font-style: var(--font-style-normal);
-          font-weight: var(--font-weight-500);
-          line-height: 24px;
-        }
-      }
-
-    a {
-      color: var(--brand-color-secundary);
-      font-size: var(--font-size-s);
-      font-style: var(--font-style-normal);
-      font-weight: var(--font-weight-500);
-      line-height: 24px;
-      text-align: center;
-    }
 `;
 
 export const ArticlePost = styled.article`

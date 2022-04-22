@@ -6,7 +6,7 @@ import {
   ArticleProfile, ArticleShare, MainContainer, ShowApp,
 } from './style';
 import sarahImage from '../../assets/images/main_images/sarah-profile-image.svg';
-import shareScreenMobile from '../../assets/images/main_images/share-screen-mobile.svg';
+import shareScreen from '../../assets/images/main_images/share-screen.svg';
 import sharePayment from '../../assets/images/main_images/share-payment.svg';
 import newFeature from '../../assets/images/main_images/new-feature.svg';
 import FormPost from '../Form/FormPost';
@@ -21,22 +21,24 @@ export default function Main() {
           <h5>Wednesday, Thursday, Friday - 7:30 - 5:30</h5>
         </ArticleProfile>
         <ArticleShare>
-          <img src={shareScreenMobile} alt="share screen" />
-          <h3>Share your home, nanny and costs</h3>
-          <p>
-            You have a fantastic home, a fantastic nanny and wouldn’t
-            cutting your costs in half be, well, fantastic?! If only it
-            was easy to connect with other parents to share your costs?
-            Well now it is, with Hapu.
-            {' '}
-            <a href="tribe">Hapu means tribe</a>
-            {' '}
-            and it’s our foundational 3 tribal principles that empowers you to
-            create and manage your own tribe. A tribe that together
-            has the power to create new affordable solutions in
-            childcare that work for you and your community.
-          </p>
-          <a href="started">Ready to get started?</a>
+          <img src={shareScreen} alt="share screen" />
+          <div>
+            <h3>Share your home, nanny and costs</h3>
+            <p>
+              You have a fantastic home, a fantastic nanny and wouldn’t
+              cutting your costs in half be, well, fantastic?! If only it
+              was easy to connect with other parents to share your costs?
+              Well now it is, with Hapu.
+              {' '}
+              <a href="tribe">Hapu means tribe</a>
+              {' '}
+              and it’s our foundational 3 tribal principles that empowers you to
+              create and manage your own tribe. A tribe that together
+              has the power to create new affordable solutions in
+              childcare that work for you and your community.
+            </p>
+            <a href="started">Ready to get started?</a>
+          </div>
         </ArticleShare>
         <hr />
         <ArticlePost>
