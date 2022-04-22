@@ -1,22 +1,28 @@
 import React from 'react';
-import { FooterContainer } from './style';
+import { FooterContainer, FooterCopy } from './style';
 import logoHapu from '../../assets/images/footer_images/logo-hapu.svg';
 import logoFacebook from '../../assets/images/footer_images/facebook.svg';
 import logoTwitter from '../../assets/images/footer_images/twitter.svg';
 import logoInstagram from '../../assets/images/footer_images/instagram.svg';
+import calendar from '../../assets/images/footer_images/calendar.svg';
 
 export default function Footer() {
   return (
     <FooterContainer>
-      <h3>Become a nanny share host</h3>
-      <p>Takes less than 5 minutes to get started</p>
+      <div>
+        <h3>Become a nanny share host</h3>
+        <p>Takes less than 5 minutes to get started</p>
+      </div>
       <button type="button">
-        <p>Create Your Nanny Share</p>
-        <p>Takes less than 5 minutes</p>
+        <img src={calendar} alt="" />
+        <div>
+          <p>Create Your Nanny Share</p>
+          <span>Takes less than 5 minutes</span>
+        </div>
       </button>
       <a href="local">Or browse local nanny-shares</a>
-      <img src={logoHapu} alt="logo hapu" />
-      <div>
+      <section>
+        <img src={logoHapu} alt="logo hapu" />
         <div>
           <h5>Share Your Nanny</h5>
           <h5>Our Story</h5>
@@ -28,9 +34,9 @@ export default function Footer() {
           <img src={logoTwitter} alt="logo Twitter" />
           <img src={logoInstagram} alt="logo Instagram" />
         </div>
-      </div>
+      </section>
       <hr />
-      <p>Copyright © 2017 Hapu PTY Limited All rights reserved</p>
+      <FooterCopy>Copyright © 2017 Hapu PTY Limited All rights reserved</FooterCopy>
     </FooterContainer>
   );
 }
