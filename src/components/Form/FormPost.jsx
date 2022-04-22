@@ -25,7 +25,6 @@ export default function FormPost() {
           onChange={({ target }) => setName(target.value)}
         />
       </label>
-      <br />
       <label htmlFor="email">
         <input
           name="email"
