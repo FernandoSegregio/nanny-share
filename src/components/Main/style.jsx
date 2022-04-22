@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const MainContainer = styled.main`
-  
+export const MainContainer = styled.main` 
 `;
 
 export const ShowApp = styled.section`
@@ -201,5 +200,40 @@ export const ArticleFramework = styled.article`
       line-height: 24px;
       text-align: center;
       width: 328px;
+    }
+`;
+
+export const ArticleNewFeature = styled.article`  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 524px;
+  row-gap: 16px;
+
+    img {
+      width: 216px;
+    }
+
+    h3 {
+      color: var(--neutral-color-gray-24);
+      font-size: var(--font-size-l);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-500);
+      line-height: 32px;
+      margin-top: 8px;
+      text-align: center;
+      width: 328px;
+    }
+
+    p {
+      color: var(--neutral-color-gray-24);
+      font-size: var(--font-size-s);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-normal);
+      line-height: var(--line-height-xl);
+      text-align: center;
+      width: 328px;
+
     }
 `;

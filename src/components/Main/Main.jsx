@@ -1,12 +1,14 @@
 import React from 'react';
 import {
   ArticleFramework,
+  ArticleNewFeature,
   ArticlePost,
   ArticleProfile, ArticleShare, MainContainer, ShowApp,
 } from './style';
 import sarahImage from '../../assets/images/main_images/sarah-profile-image.svg';
 import shareScreenMobile from '../../assets/images/main_images/share-screen-mobile.svg';
 import sharePayment from '../../assets/images/main_images/share-payment.svg';
+import newFeature from '../../assets/images/main_images/new-feature.svg';
 import FormPost from '../Form/FormPost';
 
 export default function Main() {
@@ -71,6 +73,18 @@ export default function Main() {
           </p>
           <a href="framework">Read how Hapu’s tribal background defines our app</a>
         </ArticleFramework>
+        <hr />
+        <ArticleNewFeature>
+          <img src={newFeature} alt="new feature" />
+          <h3>Coming soon: Nanny Share Daily Diary!</h3>
+          <p>
+            With the Hapu daily diary your nanny will be able
+            to update you and your sharers with photos and commentary
+            of the day. You and sharers will receive notifications and
+            you’ll be able to login to view the daily adventures fo
+            your little ones. We can’t wait!
+          </p>
+        </ArticleNewFeature>
       </ShowApp>
     </MainContainer>
   );
