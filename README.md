@@ -18,6 +18,7 @@ Para Criação do projeto, foi utilizada os conceitos de:
 
 ## :wrench: Tecnologias utilizadas
 * Vite
+* Yarn
 * React
 * Gerenciamento de Estado
 * RTL
@@ -46,7 +47,7 @@ $ yarn test
 Para buildar a aplica;áo, execute
 
 ```
-$ yarn test
+$ yarn build
 ```
 
 A aplicação roda no navegador, na porta 3000 com o seguinte endereço: http://localhost:3000
