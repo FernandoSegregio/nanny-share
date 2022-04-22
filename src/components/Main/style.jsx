@@ -165,3 +165,41 @@ export const ArticlePost = styled.article`
       }
     }
 `;
+
+export const ArticleFramework = styled.article`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 476px;
+
+    h3 {
+      color: var(--neutral-color-gray-24);
+      font-size: var(--font-size-l);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-500);
+      line-height: 32px;
+      text-align: center;
+      width: 243px;
+    }
+
+    p {
+      color: var(--neutral-color-gray-24);
+      font-size: var(--font-size-s);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-normal);
+      line-height: var(--line-height-xl);
+      text-align: center;
+      width: 328px;
+    }
+
+    a {
+      color: var(--brand-color-secundary);
+      font-size: var(--font-size-s);
+      font-style: var(--font-style-normal);
+      font-weight: var(--font-weight-500);
+      line-height: 24px;
+      text-align: center;
+      width: 328px;
+    }
+`;
