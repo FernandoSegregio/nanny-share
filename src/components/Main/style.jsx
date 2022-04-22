@@ -6,6 +6,7 @@ export const MainContainer = styled.main`
 
 export const ShowApp = styled.section`
   align-items: center;
+  background-color: var(--neutral-color-white-200);
   display: flex;
   flex-direction: column;
 
@@ -16,6 +17,7 @@ export const ShowApp = styled.section`
 
 export const ArticleProfile = styled.article`
   align-items: center;
+  background-color: var(--neutral-color-white-100);
   border: var(--border-width-hairline) solid var(--neutral-color-gray-88);
   flex-direction: column;
   display: flex;
@@ -98,4 +100,23 @@ export const ArticleShare = styled.article`
 
 export const ArticlePost = styled.article`
   height: 496px;
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      button {
+        background-color: var(--brand-color-primary);
+        border: var(--border-width-none);
+        border-radius: var(--border-radius-nano);
+        color: var(--neutral-color-white-100);
+        cursor: pointer;
+        font-size: var(--font-size-xs);
+        font-style: var(--font-style-normal);
+        font-weight: var(--font-weight-500);
+        line-height: 20px;
+        height: 48px;
+        width: 328px;
+      }
+    }
 `;
