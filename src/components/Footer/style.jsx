@@ -8,14 +8,24 @@ export const FooterContainer = styled.footer`
   justify-content: space-evenly;
   width: 100%;
 
+    @media (min-width: 900px) {
+      height: 540px;
+    }
+
   h3 {
      color: var(--neutral-color-gray-24);
      font-size: var(--font-size-l);
      font-style: var(--font-style-normal);
      font-weight: var(--font-weight-500);
      line-height: 32px;
+     margin-top: 60px;
      text-align: center;
      width: 291px;
+
+      @media (min-width: 900px) {
+        font-size: var(--font-size-xl);
+        width: 370px;
+      }
     }
 
   p {
@@ -26,6 +36,7 @@ export const FooterContainer = styled.footer`
     line-height: var(--line-height-xl);
     text-align: center;
     width: 304px;
+
     }
 
   button {
@@ -77,21 +88,47 @@ export const FooterContainer = styled.footer`
       height: 182px;
       justify-content: space-between;
 
+      @media (min-width: 900px) {
+       flex-direction: row;
+       justify-content: space-around;
+       width: 100%;
+      }
+
       div {
+        column-gap: 16px;
+        display: flex;
+      }
+
+
+
+      nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 219px;
-        column-gap: 3px;
+        width: 280px;
+        column-gap: 25px;
+
+        @media (min-width: 900px) {
+        width: 600px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-left: 110px;
+        }
   
-        h5 {
+        a {
           color: var(--neutral-color-gray-24);
           font-size: var(--font-size-xs);
           font-style: var(--font-style-normal);
           font-weight: var(--font-weight-500);
           line-height: 20px;
           text-align: center;
-          padding: 10px 5px;    
+          padding: 10px 5px;
+          
+          @media (min-width: 900px) {
+            width: 100;
+            text-decoration: nome;
+          }
+          
           }
       }
     }
@@ -100,6 +137,11 @@ export const FooterContainer = styled.footer`
   
   hr {
     width: 328px;
+
+    @media (min-width: 900px) {
+      visibility: hidden;
+     width: 0;
+    }
   }
 `;
 
@@ -110,7 +152,11 @@ export const FooterCopy = styled.span`
   font-weight: var(--font-weight-normal);
   line-height: 16px;
   opacity: 0.6;
-  text-align: right;     
+  text-align: right;  
+  
+  @media (min-width: 900px) {
+     padding-bottom: 30px;
+    }
 `;
 
 export default FooterContainer;
