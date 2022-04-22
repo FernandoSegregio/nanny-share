@@ -163,6 +163,11 @@ export const ArticlePost = styled.article`
   justify-content: space-evenly;
   text-align: center; 
 
+  @media (min-width: 900px) {
+    height: 322px;
+    justify-content: center;
+  }
+
     h3 {
       color: var(--neutral-color-gray-24);
       font-size: var(--font-size-l);
@@ -170,6 +175,10 @@ export const ArticlePost = styled.article`
       font-weight: var(--font-weight-500);
       line-height: 32px;
       width: 328px;
+
+      @media (min-width: 900px) {
+        width: 985px;
+      }
     }
 
     p {
@@ -180,6 +189,11 @@ export const ArticlePost = styled.article`
       line-height: var(--line-height-xl);
       text-align: center;
       width: 328px;
+      
+      @media (min-width: 900px) {
+        margin-top: 16px;
+        width: 984px;
+      }
     }
 
     form {
@@ -187,6 +201,13 @@ export const ArticlePost = styled.article`
       display: flex;
       flex-direction: column;
       height: 172px;
+      column-gap: 12px;
+
+      @media (min-width: 900px) {
+       flex-direction: row;
+       height: 48px;
+       margin-top: 74px;
+      }
 
       button {
         background-color: var(--brand-color-primary);
@@ -201,6 +222,11 @@ export const ArticlePost = styled.article`
         line-height: 20px;
         margin-top: 8px;
         width: 328px;
+
+        @media (min-width: 900px) {
+         margin-top: 0;
+         width: 96px;
+        }
       }
 
       input {
@@ -209,6 +235,11 @@ export const ArticlePost = styled.article`
         height: 48px;
         width: 328px;
         margin-bottom: 10px;
+
+        @media (min-width: 900px) {
+         margin-bottom: 0;
+         width: 232px;
+        }
 
         &::placeholder {
           color: var(--neutral-color-gray-24);
