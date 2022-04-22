@@ -412,6 +412,11 @@ export const ArticleNewFeature = styled.article`
   height: 524px;
   row-gap: 16px;
 
+    @media (min-width: 900px) {
+      height: 508px;
+      row-gap: 40px;
+    }
+
     img {
       width: 216px;
     }
@@ -425,6 +430,11 @@ export const ArticleNewFeature = styled.article`
       margin-top: 8px;
       text-align: center;
       width: 328px;
+
+      @media (min-width: 900px) {
+        font-size: var(--font-size-xl);
+        width: 522px;
+      }
     }
 
     p {
@@ -435,6 +445,10 @@ export const ArticleNewFeature = styled.article`
       line-height: var(--line-height-xl);
       text-align: center;
       width: 328px;
+
+        @media (min-width: 900px) {
+          width: 784px;
+        }
 
     }
 `;
