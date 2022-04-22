@@ -13,6 +13,7 @@ import sarahImage from '../../assets/images/main_images/sarah-profile-image.svg'
 import shareScreen from '../../assets/images/main_images/share-screen.svg';
 import sharePayment from '../../assets/images/main_images/share-payment.svg';
 import newFeature from '../../assets/images/main_images/new-feature.svg';
+import billingHistory from '../../assets/images/main_images/billing-history.svg';
 import FormPost from '../Form/FormPost';
 
 export default function Main() {
@@ -80,6 +81,7 @@ export default function Main() {
             transparency over money and equality of participation.
           </p>
           <a href="framework">Read how Hapu’s tribal background defines our app</a>
+          <img src={billingHistory} alt="billing history" />
         </ArticleFramework>
         <hr />
         <ArticleNewFeature>
