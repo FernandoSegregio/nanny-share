@@ -43,6 +43,7 @@ export default function Main() {
           </p>
           <FormPost />
         </ArticlePost>
+        <hr />
       </ShowApp>
     </MainContainer>
   );
