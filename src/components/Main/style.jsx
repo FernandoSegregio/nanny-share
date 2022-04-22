@@ -254,6 +254,7 @@ export const ArticlePost = styled.article`
 `;
 
 export const ArticleShareSimple = styled.article`
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
