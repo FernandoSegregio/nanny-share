@@ -9,7 +9,7 @@ export async function postUser(objData) {
     const postData = await api.post('api/v1/challenge-newsletter', objData);
     return postData;
   } catch (error) {
-    console.log('error: ', error);
+    console.error('error: ', error);
   }
   return null;
 }
